@@ -6,7 +6,7 @@ Supporting Color (light gray white): #cad2d5
 Accent Color (Yellow): #f4cd5c
 */
 body {
-  background-color: ghostwhite;
+  background-color: #faf9f6;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -102,4 +102,10 @@ a:active { /* selected link */
 
 .button.contact:active {
   color: navy;
+}
+
+header {
+  background-color: white;
+  padding: 15px 10px;
+  border-bottom: 2px solid #007d6c;
 }
