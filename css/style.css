@@ -116,13 +116,18 @@ header {
   text-align: center;
 
   /* start code for box shadow */
-  width: [object Object]px;
-  height: [object Object]px;
   border: solid #bdbdbd 0;
   box-shadow: 0 5px 23px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 5px 23px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 23px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+footer svg {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  margin-top: 20px;
 }
 
 /* Layout styling */
@@ -188,3 +193,4 @@ nav > ul > li > a:active {
 #work h2 {
   text-align: center;
 }
+
