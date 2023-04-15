@@ -13,45 +13,42 @@
 <body>
     <!-- For the header -->
 	<header id="header-section">
-		<div>
-        <img src="img/logo.svg">
-        <nav>
-			<ul>
+		<div class="container">
+        	<img src="img/logo.svg" class="logo">
+        	<nav>
+				<ul>
 				<li><a href="index.html">Work</a></li>
         		<li><a href="about.html">About</a></li>
         		<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+				</ul>
+			</nav>
         </div>
 	</header>
 	
 	<main>
 	<!-- For the page title -->
 	<div> 
-		<div>
+		<div class="container">
 			<h1>About</h1>
 		</div>
 	</div>
 	
 	<!-- For Image and Main body area -->
-	<div>
-		<div>
-			<picture>
-				<source srcset="img/about-600px.jpg" media="(max-width:767px)">
-				<img src="img/about-1200px.jpg" alt="Image">
-			</picture>
-
-	<!-- column 1 for My Story -->
-			<div>
+	<div class="container">
+		<picture>
+			<source srcset="img/about-600px.jpg" media="(max-width:767px)">
+			<img src="img/about-1200px.jpg" alt="Image">
+		</picture>
+		
+		<div class="row"><!-- row that holds 2 columns -->
+			<div><!-- column 1 for My Story -->
 				<h2>Hi! I’m a UI/UX Designer and Web Producer based in Portland, OR.</h2>
 				<p>Also a yoga instructor, musician, and climber; a big fan of nature, cats, and comic books (DC over Marvel). I love creating things - from handmade projects to websites and app screens. Through my diverse marketing background, I’ve learned the importance of establishing a brand voice and prioritizing the user experience. I carry this mindset into my design work - whether in creating a web page or mapping out the different user touchpoints of a campaign. </p>
 				<p>Previously created an ambassador program and influencer campaign for NaturallyCurly, and did web production at Entertainment Benefits Group. Currently managing digital website content at Dr. Martens.</p>
 				<a href="files/resume.pdf" target="_blank">Download My Resume</a>
-			</div>
-	<!-- end colum 1 for My Story-->
+			</div><!-- end colum 1 for My Story-->
 	
-	<!-- column 2 for Skills and Tools-->
-			<div>
+			<div><!-- column 2 for Skills and Tools-->
 				<h2>Skills & Tools</h2>
 				<div>
 					<div><!-- Skills list --> 
@@ -85,16 +82,14 @@
 						</ul>
 					</div>
 				</div>
-			</div>
-	<!-- end column 2 for Skills and Tools-->
-		
-		</div>
+			</div><!-- end column 2 for Skills and Tools-->
+		</div><!-- end row that holds 2 columns -->
 	</div>	
 	</main>
 
 		<!-- For the footer -->
 		<footer id="contact">
-			<div>
+			<div class="container">
 				<h2>Connect With Me</h2>
 				<p>If you like my work and would like to get in touch, please feel free to send me an email by clicking below.</p>
 				<div>
