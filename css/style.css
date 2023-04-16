@@ -4,6 +4,7 @@ Primary Color (Dark Teal): #007d6c
 Secondary Color (Light Green): #79bb9d
 Supporting Color (light gray white): #cad2d5
 Accent Color (Yellow): #f4cd5c
+Tan background: #f9f8f6
 Off-white background: #faf9f6
 */
 * {
@@ -11,7 +12,7 @@ Off-white background: #faf9f6
 }
 
 body {
-  background-color: #faf9f6;
+  background-color: white;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -25,18 +26,18 @@ h3,
 h4 { line-height: 1.4; }
 
 h1 {
-  font-size: 2.75em; /* Sets the h1 font size to 2.75 x the body font size */
-  font-weight: 700;
+  font-size: 2.2em; /* Sets the h1 font size to 2.2 x the body font size */
+  font-weight: 650;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 600;
+  font-size: 1.7em;
+  font-weight: 570;
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 450;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 h4 {
@@ -55,7 +56,7 @@ a {
 }
 
 a:visited { /* visited link */
-  color: navy;
+  color: #79bb9d;
 }
 
 a:hover,
@@ -106,11 +107,11 @@ a:active { /* selected link */
 }
 
 .button.contact:active {
-  color: navy;
+  color: #f4cd5c;
 }
 
 header {
-  background-color: #cad2d5;
+  background-color: #f9f8f6;
   padding: 10px 0;
   border-bottom: 2px solid #007d6c;
   text-align: center;
@@ -121,6 +122,10 @@ header {
   -webkit-box-shadow: 0 5px 23px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 23px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+footer {
+  text-align: center;
 }
 
 footer svg {
@@ -166,7 +171,7 @@ nav > ul > li {
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: black;
 }
 
@@ -184,13 +189,163 @@ nav > ul > li > a:active {
 }
 
 #hero {
-  background-color: #cad2d5;
+  background-color: #f9f8f6;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
+}
+
+#hero span {
+  display: block;
 }
 
 #work h2 {
   text-align: center;
 }
 
+#about-page h1,
+h2 {
+  text-align: center;
+}
+
+#about-page .button {
+  text-align: center;
+}
+
+#popcornlist-page h1,
+h4 {
+  text-align: center;
+}
+
+/* -------- MEDIA QUERIES FOR RESPONSIVE SCREENS -------- */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main { /* to remove white gap between nav and header section */
+    padding-top: 1px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  #about-page .row {
+    margin-top: 30px;
+  }
+}
+
+/* ==============================
+Large devices (1024px and larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #about-page .row h2 {
+    margin-top: 20px;
+    text-align: left;
+  }
+}
+
+/* ==============================
+Xlarge devices (1440px and larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ANIMATION */
+.about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
