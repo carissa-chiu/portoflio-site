@@ -1,10 +1,9 @@
 /*
 Colors used:
-Primary Color (Dark Teal): #007d6c
-Secondary Color (Light Green): #79bb9d
-Supporting Color (light gray white): #cad2d5
-Accent Color (Yellow): #f4cd5c
+Primary Color (Dark Teal): #106d57
+Secondary Color (Light Green): #879f8d
 Tan background: #f9f8f6
+Accent Color (Yellow): #f4cd5c
 Off-white background: #faf9f6
 */
 * {
@@ -26,13 +25,13 @@ h3,
 h4 { line-height: 1.4; }
 
 h1 {
-  font-size: 2.2em; /* Sets the h1 font size to 2.2 x the body font size */
-  font-weight: 650;
+  font-size: 2.1em; /* Sets the h1 font size to 2.2 x the body font size */
+  font-weight: 550;
 }
 
 h2 {
   font-size: 1.7em;
-  font-weight: 570;
+  font-weight: 510;
 }
 
 h3 {
@@ -56,23 +55,23 @@ a {
 }
 
 a:visited { /* visited link */
-  color: #79bb9d;
+  color: #879f8d;
 }
 
 a:hover,
 a:focus {
-  color: #007d6c;
+  color: #106d57;
   text-decoration: none; /* No underlining */
 }
 
 a:active { /* selected link */
-  color: #79bb9d;
+  color: #879f8d;
 }
 
 /* BUTTON STYLING */
 .button {
   display: inline-block;
-  background-color: #007d6c;
+  background-color: #106d57;
   color: #fff;
   font-weight: 400;
   padding: 10px;
@@ -89,21 +88,21 @@ a:active { /* selected link */
 }
 
 .button:active {
-  background-color: #79bb9d;
+  background-color: #879f8d;
   text-decoration: none;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #007d6c;
+  color: #106d57;
   text-transform: uppercase;
-  border: 2px solid #007d6c;
+  border: 2px solid #106d57;
   border-radius: 6px;
 }
 
 .button.contact:hover {
-  color: #79bb9d;
-  border: 2px solid #79bb9d;
+  color: #879f8d;
+  border: 2px solid #879f8d;
 }
 
 .button.contact:active {
@@ -113,7 +112,7 @@ a:active { /* selected link */
 header {
   background-color: #f9f8f6;
   padding: 10px 0;
-  border-bottom: 2px solid #007d6c;
+  border-bottom: 2px solid #106d57;
   text-align: center;
 
   /* start code for box shadow */
@@ -126,6 +125,7 @@ header {
 
 footer {
   text-align: center;
+  margin-top: 50px;
 }
 
 footer svg {
@@ -170,8 +170,8 @@ nav > ul > li {
 
 nav > ul > li > a {
   padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 500;
+  text-transform: lowercase;
+  font-weight: 350;
   color: black;
 }
 
@@ -180,12 +180,12 @@ nav > ul > li > a:visited {
 }
 
 nav > ul > li > a:hover {
-  color: #007d6c;
+  color: #106d57;
 }
 
 nav > ul > li > a:active {
   text-decoration: underline;
-  color: #79bb9d;
+  color: #879f8d;
 }
 
 #hero {
@@ -200,16 +200,17 @@ nav > ul > li > a:active {
   display: block;
 }
 
+.center {
+  text-align: center;
+}
+
 #work h2 {
   text-align: center;
+  margin: 50px 0;
 }
 
 #about-page h1,
 h2 {
-  text-align: center;
-}
-
-#about-page .button {
   text-align: center;
 }
 
@@ -232,6 +233,10 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav ul {
+    margin-bottom: 0;
   }
 
   main { /* to remove white gap between nav and header section */
@@ -257,6 +262,10 @@ Medium devices (640px and larger)
     display: table;
   }
 
+  #work h3 {
+    margin-top: 0;
+  }
+
   #about-page h3 {
     margin-top: 0;
   }
@@ -276,6 +285,12 @@ Large devices (1024px and larger)
 
   .col-lg-5 {
     width: 41.66%;
+    padding-left: 7%;
+    text-align: left;
+  }
+
+  .col-lg-12 {
+    width: 100%;
   }
 
   .container {
@@ -284,9 +299,16 @@ Large devices (1024px and larger)
     margin-right: auto;
   }
 
-  #about-page .row h2 {
-    margin-top: 20px;
+  .col-lg-7 h2 {
     text-align: left;
+  }
+
+  .col-lg-5 h2 {
+    text-align: left;
+  }
+
+  #about-page h2 {
+    margin-top: 0;
   }
 }
 
