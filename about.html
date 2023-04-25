@@ -9,21 +9,26 @@
 	<meta name="author" content="Carissa Chiu">
 	<meta name="description" content="UI/UX Designer Portfolio. I have a background in Digital Marketing and Web Production and I love creating clean, aesthetic, and user-friendly designs.">
     <title>About Carissa Chiu</title>
+		<!-- Font CDN embed code -->
+	<script src="https://kit.fontawesome.com/56ecae1dc6.js" crossorigin="anonymous"></script>
 </head>
 <body id="about-page">
     <!-- For the header -->
 	<header id="header-section">
 		<div class="container">
-        	<a href="index.html">
-				<img src="img/logo.svg" class="logo">
-			</a>
-        	<nav>
-				<ul>
-				<li><a href="index.html">Work</a></li>
-        		<li><a href="about.html">About</a></li>
-        		<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+        	<div class="navtoggle" id="myNavtoggle">
+				<a href="index.html">
+					<img src="img/logo.svg" class="logo">
+				</a>
+				<nav>
+					<ul>
+					<li><a href="index.html">Work</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+					</ul>
+				</nav>
+			</div>
         </div>
 	</header>
 	
@@ -114,6 +119,7 @@
 				<p>Copyright Carissa Chiu 2023</p>
 			</div>
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>

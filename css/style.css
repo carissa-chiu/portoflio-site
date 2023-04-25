@@ -113,7 +113,6 @@ header {
   background-color: #f9f8f6;
   padding: 10px 0;
   border-bottom: 2px solid #106d57;
-  text-align: center;
 
   /* start code for box shadow */
   border: solid #bdbdbd 0;
@@ -150,22 +149,14 @@ footer svg {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 /* NAVIGATION styling */
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -187,6 +178,36 @@ nav > ul > li > a:active {
   text-decoration: underline;
   color: #879f8d;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}   /* End NAVIGATION styling */
 
 #hero {
   background-color: #f9f8f6;
@@ -229,6 +250,10 @@ Medium devices (640px and larger)
     text-align: unset;
   }
 
+  .logo {
+    max-width: 250px;
+  }
+
   nav {
     width: auto;
     float: right;
@@ -237,6 +262,18 @@ Medium devices (640px and larger)
 
   nav ul {
     margin-bottom: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   main { /* to remove white gap between nav and header section */
