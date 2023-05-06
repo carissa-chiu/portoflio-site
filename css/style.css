@@ -2,7 +2,7 @@
 Colors used:
 Primary Color (Dark Teal): #106d57
 Secondary Color (Light Green): #879f8d
-Tan background: #f9f8f6
+Tan background: #f9f8f6,
 Accent Color (Yellow): #f4cd5c
 Off-white background: #faf9f6
 */
@@ -12,9 +12,9 @@ Off-white background: #faf9f6
 
 body {
   background-color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 344;
   line-height: 1.6;
   color: black;
 }
@@ -25,13 +25,17 @@ h3,
 h4 { line-height: 1.4; }
 
 h1 {
-  font-size: 2.1em; /* Sets the h1 font size to 2.2 x the body font size */
-  font-weight: 550;
+  font-size: 2.8em; /* Sets the h1 font size to 2.2 x the body font size */
+  font-weight: 520;
+  font-family: 'Abril fatface', sans-serif;
+  margin-top: 40px;
+  color: #106d57;
 }
 
 h2 {
-  font-size: 1.7em;
-  font-weight: 510;
+  font-size: 1.8em;
+  font-weight: 540;
+  color: #106d57;
 }
 
 h3 {
@@ -54,10 +58,6 @@ a {
   text-decoration: none; /* No underlining */
 }
 
-a:visited { /* visited link */
-  color: #879f8d;
-}
-
 a:hover,
 a:focus {
   color: #106d57;
@@ -74,15 +74,16 @@ a:active { /* selected link */
   background-color: #106d57;
   color: #fff;
   font-weight: 400;
-  padding: 10px;
-  border-radius: 6px;
+  margin-top: 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
   transition: 0.2s opacity;
 }
 
 .button:hover {
   color: #fff;
   font-weight: 400;
-  padding: 10px;
+  padding: 10px 15px;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -111,7 +112,7 @@ a:active { /* selected link */
 
 header {
   background-color: #f9f8f6;
-  padding: 10px 0;
+  padding: 1px 0;
   border-bottom: 2px solid #106d57;
 
   /* start code for box shadow */
@@ -123,20 +124,21 @@ header {
 }
 
 footer {
+  background-color: #f9f8f6;
   text-align: center;
   margin-top: 50px;
 }
 
 footer svg {
-  height: 35px;
-  width: 35px;
-  margin-right: 10px;
-  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  margin: 20px 5px;
+  border-radius: 8px;
 }
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 25px;
 }
 
 .row {
@@ -144,7 +146,7 @@ footer svg {
 }
 
 #work .row {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #4a4a4a;
 }
 
@@ -155,7 +157,7 @@ footer svg {
 /* NAVIGATION styling */
 nav > ul {
   list-style-type: none;
-  padding: 0;
+  padding: 5px;
   margin: 0;
 }
 
@@ -209,9 +211,16 @@ nav > ul > li > a:active {
   padding: 0 0 10px;
 }   /* End NAVIGATION styling */
 
+#header-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #hero {
   background-color: #f9f8f6;
   padding: 20px 0;
+  margin-top: 65px;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -219,6 +228,10 @@ nav > ul > li > a:active {
 
 #hero span {
   display: block;
+}
+
+#page-header {
+  margin-top: 70px;
 }
 
 .center {
@@ -240,6 +253,10 @@ h4 {
   text-align: center;
 }
 
+.contact {
+  scroll-behavior: smooth;
+}
+
 /* -------- MEDIA QUERIES FOR RESPONSIVE SCREENS -------- */
 
 /* ==============================
@@ -248,6 +265,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
+    padding: 1px 0;
   }
 
   .logo {
@@ -284,6 +302,18 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
+  h1 {
+    margin-top: 55px;
+    font-size: 3.5em;
+    font-weight: 540;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.2em;
+    font-weight: 550;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -297,6 +327,10 @@ Medium devices (640px and larger)
     content: "";
     clear: both;
     display: table;
+  }
+
+  #page-header {
+    margin-top: 100px;
   }
 
   #work h3 {
